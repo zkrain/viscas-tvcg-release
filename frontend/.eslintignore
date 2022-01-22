@@ -1,0 +1,14 @@
+# don't ever lint node_modules
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+# don't lint nyc coverage output
+coverage
+
+babel.config.js
+node_modules/*
+src/main.ts
+src/shims-tsx.d.ts
+src/utils/stdbscan.ts
+src/utils/numeric.js
+src/utils/mds.js

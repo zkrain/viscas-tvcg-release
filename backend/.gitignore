@@ -1,0 +1,6 @@
+output/v
+pkg/mod
+.idea
+*.exe
+
+(v_10)\w+.txt

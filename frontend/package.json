@@ -1,0 +1,90 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "cp -f correction/d3-lasso.js node_modules/d3-lasso/build/d3-lasso.js; cp -f correction/leaflet.draw.js node_modules/leaflet-draw/dist/leaflet.draw.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@mapbox/mapbox-gl-draw": "^1.1.2",
+    "@turf/boolean-point-in-polygon": "latest",
+    "@turf/helpers": "latest",
+    "@turf/turf": "^5.1.6",
+    "@types/bezier-easing": "^2.1.2",
+    "@types/color": "^3.0.1",
+    "@types/d3": "^5.7.2",
+    "@types/leaflet": "^1.5.6",
+    "@types/leaflet-draw": "^1.0.2",
+    "@types/lodash": "^4.14.136",
+    "@types/mapbox-gl": "^0.51.11",
+    "@types/turf": "^3.5.32",
+    "animate.css": "^3.7.2",
+    "bezier-easing": "^2.1.0",
+    "color": "^3.1.2",
+    "core-js": "^2.6.5",
+    "d3": "^5.9.7",
+    "d3-lasso": "^0.0.5",
+    "density-clustering": "^1.3.0",
+    "element-ui": "^2.13.0",
+    "hull.js": "^1.0.0",
+    "leaflet": "^1.6.0",
+    "leaflet-css": "^0.1.0",
+    "leaflet-draw": "^1.0.4",
+    "lodash": "^4.17.15",
+    "mapbox-gl": "^1.1.1",
+    "turf-inside": "latest",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-resource": "^1.5.1",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard",
+      "@vue/typescript"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
