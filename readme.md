@@ -6,42 +6,20 @@ Abstract: Many spatiotemporal events can be viewed as contagions. These events i
 
 
 ## Installation
-The system consists of the backend server and the frontend web interface.
 
 ### Prerequisites
-* Python 3.8.9
-* Node 14.18.3
-* go 1.17.6
-* Google Chrome Browser
+* [Docker](https://docs.docker.com/get-docker/) 20.10
+* [Docker Compose](https://docs.docker.com/compose/cli-command/#installing-compose-v2) v2
+* Google Chrome
 
-### Setup the Backend
-Compile golang code for the server into an executable file:
+### Build & Run
+``sudo`` can be omitted if the current user has sufficient privilege to execute docker commands:
+
 ```shell script
-$ cd backend/src
-$ go build main/main-http-new.go
+$ sudo docker compose up
 ```
 
-Start the server (under /backend/src):
-```shell script
-$ ./main-http-new
-```
-The server runs at http://localhost:8888. Please keep it running while using the frontend interface.
-
-### Setup the Frontend
-Install the dependencies with npm:
-```shell script
-$ cd frontend
-$ npm install
-```
-
-Start the frontend (under /frontend):
-```shell script
-$ npm run serve
-```
-
-It starts a node development server at http://localhost:8080 by default. Please access it in a web browser to view the interface.
-
-
+VisCas can now be accessed via http://localhost:8080 with Chrome.
 
 ## Data description
 
@@ -56,7 +34,7 @@ The air pollution event dataset can be collected and derived from air quality we
 
 ## Replicability
 
-We provide a [DEMO Video](https://www.youtube.com/watch?v=IVSf0BNRC_c&t=3s) to guide the reproduction of the cases in [our paper](https://zjuidg.org/source/projects/VisCas/VisCas.pdf). 
+We provide a [DEMO Video](https://www.youtube.com/watch?v=IVSf0BNRC_c&t=3s) to guide the reproduction of the cases in [our paper](https://zjuidg.org/source/projects/VisCas/VisCas.pdf).
 The video content is divided into three parts.
 The first part introduces the system.
 The second and third parts introduce two cases, respectively, in a step-by-step way.

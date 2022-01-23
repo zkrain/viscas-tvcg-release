@@ -1,7 +1,7 @@
 FROM golang:1.17-alpine
-WORKDIR /backend/src
+WORKDIR /backend
 COPY . .
-RUN go build main/main-http-new.go
+RUN cd src && go build main/main-http-new.go
+WORKDIR /backend/src
 EXPOSE 8888
 ENTRYPOINT ["/backend/src/main-http-new"]
-
