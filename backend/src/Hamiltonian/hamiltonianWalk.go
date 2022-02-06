@@ -283,8 +283,8 @@ func MyGA(matrix [][]float64, N uint64) []int {
 
 	for k < 400 {
 		localImprovement := -1.0
-		localI := -1
-		localJ := -1
+		// localI := -1
+		// localJ := -1
 		for i := range matrix {
 			for j := range matrix {
 				if j > i {
@@ -295,8 +295,8 @@ func MyGA(matrix [][]float64, N uint64) []int {
 
 					if localImprovement < improvement {
 						localImprovement = improvement
-						localI = i
-						localJ = j
+						// localI = i
+						// localJ = j
 					} else {
 						swap(&generation, i, j)
 					}
