@@ -304,7 +304,7 @@ func MyGA(matrix [][]float64, N uint64) []int {
 			}
 		}
 		// cost := getCostGA(generation, matrix)
-		fmt.Println(N, k, localImprovement, localI, localJ)
+		// fmt.Println(N, k, localImprovement, localI, localJ)
 		// fmt.Println(N, k, localImprovement, localI, localJ, cost)
 		k++
 		if localImprovement < 0.3 && k > 100 {

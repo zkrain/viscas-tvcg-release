@@ -291,7 +291,7 @@ func getLocations(w http.ResponseWriter, req *http.Request) {
 			infectDurationSum += event.DurationTime
 		}
 		var infectEventsLen = float32(len(infectEvents))
-		fmt.Println("debug", infectEvents)
+		// fmt.Println("debug", infectEvents)
 		var infectDurationAve = float32(infectDurationSum) / infectEventsLen
 		locationCounts = append(locationCounts, IDsFilter.EventDataDict[locationID].Count)
 		locationsStyle = append(locationsStyle, LocationStyle{smallAng, normalizedSmallAng, infectDurationAve})
