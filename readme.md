@@ -37,11 +37,16 @@ The air pollution event dataset can be collected and derived from air quality we
 We provide a [DEMO Video](https://www.youtube.com/watch?v=IVSf0BNRC_c&t=3s) to guide the reproduction of the cases in [our paper](https://zjuidg.org/source/projects/VisCas/VisCas.pdf).
 The video content is divided into three parts.
 The first part introduces the system.
-The second and third parts introduce two cases, respectively, in a step-by-step way.
-After the frontend and backend run, users can follow the steps in the video to reproduce the two cases.
+The second and third parts introduce two cases, respectively.
+Besides, we have also provided [a step-by-step tutorial](replicate/readme.md).
+After the frontend and backend run, users can follow the video and tutorial to reproduce the two cases.
+
+There is an interaction issue in the system.
+Panning the map cannot load the visual elements that weren't previously in the viewport.
+These visual element needs to be re-rendered by zooming in or out.
 
 ## Note
-We use leaflet.js and mapbox for map services. which is for academic purposes **only** and does not indicate any political standpoints.
+We use leaflet.js and mapbox for map services. which is for academic purposes **only** and does **not** indicate any political standpoints.
 
 ## Citation
 If you use this code for your research, please consider citing:
